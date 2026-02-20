@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoodSheets-Inspired To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="todo-container" style="position: relative;">
+
+    <div class="header-row">
+      <h1 class="title">To-Do List</h1>
+      <div class="dark-mode-switch">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle" class="toggle-label">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
+    </div>
+
+    <p id="task-tracker" class="task-tracker">0 of 0 tasks completed</p>
+
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a task in mind..." />
+      <button type="submit">Add</button>
+    </form>
+
+    <button id="delete-selected" class="bulk-delete-btn" style="display: none;">
+      🗑️ Delete Selected
+    </button>
+
+    <ul id="todo-list" class="task-list"></ul>
+
+   <div id="multi-select-tip" class="tooltip-hint" style="display: none;">
+        <div class="tooltip-content">
+            💡 Tip: Use the checkboxes to select multiple tasks and delete them all at once!
+            <button id="dismiss-tip" class="dismiss-btn" aria-label="Dismiss tooltip">×</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin-top: 2rem; text-align: center; font-size: 0.9rem; color: #6b7280;">
+      &copy; <span id="year"></span> Ibrahim Itani. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script>
+    // Dynamically set the current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
