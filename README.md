@@ -1,11 +1,11 @@
-# 📝 GoodSheets-Inspired To-Do List
+# GoodSheets-Inspired To-Do List
 
 A modern, responsive **To-Do List web application** inspired by spreadsheet-style task management.  
 Users can **add, edit, complete, and delete tasks**, with **bulk deletion**, **dark mode**, and **persistent local storage**.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Add, Edit, and Delete Tasks** – Inline editing with ✏️ icon and single-task deletion with ✕ button.
 - **Mark Tasks as Completed** – Click on a task to toggle completion status.
@@ -19,15 +19,16 @@ Users can **add, edit, complete, and delete tasks**, with **bulk deletion**, **d
 ---
 
 ## Screenshots
+
 ![Home Page](screenshots/home.png)
 
 ---
 
-## 💻 Technologies Used
+## Technologies Used
 
-- **HTML5** – Semantic markup  
-- **CSS3 / Flexbox / CSS Variables** – Responsive styling and dark mode  
-- **JavaScript (Vanilla)** – DOM manipulation, event handling, local storage  
+- **HTML5** – Semantic markup
+- **CSS3 / Flexbox / CSS Variables** – Responsive styling and dark mode
+- **JavaScript (Vanilla)** – DOM manipulation, event handling, local storage
 - **Animations** – Smooth transitions for tasks and tooltips
 
 ---
